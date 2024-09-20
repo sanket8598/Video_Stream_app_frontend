@@ -67,7 +67,7 @@ function resetForm(){
        });
        console.log(response);
        setProgress(0);
-       setMessage("File uploaded")
+       setMessage("File uploaded"+response.data.videoId)
        toast.success("File uploaded successfully");
        setUploading(false);
        resetForm();
